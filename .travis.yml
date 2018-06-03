@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 branches:
   only: 
-    - feat/deploy-by-travisci
+    - master
 os:
   - linux
 node_js:
@@ -19,4 +19,4 @@ deploy:
   script: npm run deploy:ci
   skip_cleanup: true
   on:
-    branch: feat/deploy-by-travisci
+    branch: master
