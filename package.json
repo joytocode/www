@@ -14,9 +14,8 @@
     "test:ci": "npm test -- --coverage",
     "start": "cross-env HOST=0.0.0.0 PORT=4000 nuxt",
     "build": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
-    "deploy": "gh-pages --repo https://github.com/joytocode/joytocode.github.io.git -b master -d dist --dotfiles -m \"Updated by $(git rev-parse HEAD | cut -c 1-8)\"",
-    "deploy:ci": "gh-pages --repo https://$GH_TOKEN@github.com/joytocode/joytocode.github.io.git -b master -d dist --dotfiles -m \"Updated by $(git rev-parse HEAD | cut -c 1-8)\"",
-    "gh-pages": "gh-pages --help"
+    "deploy": "gh-pages --repo https://github.com/joytocode/joytocode.github.io.git -b master -d dist --dotfiles -m \"Updated by joytocode/joytocode-home@$(git rev-parse HEAD | cut -c 1-8)\"",
+    "deploy:ci": "gh-pages --repo https://$GH_TOKEN@github.com/joytocode/joytocode.github.io.git -b master -d dist --dotfiles -m \"Updated by joytocode/joytocode-home@$(git rev-parse HEAD | cut -c 1-8)\""
   },
   "jest": {
     "testEnvironment": "node",
