@@ -1,0 +1,22 @@
+sudo: false
+language: node_js
+branches:
+  only: 
+    - feat/deploy-by-travisci
+os:
+  - linux
+node_js:
+  - "8"
+before_install:
+  - '[[ $(node -v) =~ ^v9.*$ ]] || npm install -g npm@latest'
+install:
+  - npm install
+script:
+  - npm run test:ci
+  - npm run build
+deploy:
+  provider: script
+  script: npm run deploy:ci
+  skip_cleanup: true
+  on:
+    branch: feat/deploy-by-travisci
