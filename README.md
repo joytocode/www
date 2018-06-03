@@ -1,3 +1,3 @@
 # joytocode/joytocode-home
 
-Home page of JoyToCode.
+The source of [https://joytocode.github.io](https://joytocode.github.io).
