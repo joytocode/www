@@ -1,0 +1,62 @@
+{
+  "name": "@joytocode/joytocode.github.io",
+  "version": "0.1.0",
+  "description": "Home page of JoyToCode.",
+  "repository": "https://github.com/joytocode/joytocode.github.io",
+  "author": "JoyToCode <team@joytocode.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint:base": "eslint --ext .vue --ext .js .",
+    "lint": "npm run lint:base -- --fix",
+    "posttest": "npm run lint",
+    "test": "jest --passWithNoTests",
+    "pretest:ci": "npm run lint:base",
+    "test:ci": "npm test -- --coverage",
+    "start": "cross-env HOST=0.0.0.0 PORT=4000 nuxt",
+    "build": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "gh-pages -d dist --dotfiles -m \"Updated by $(git rev-parse HEAD | cut -c 1-8)\"",
+    "deploy:ci": "gh-pages --repo https://$GH_TOKEN@github.com/joytocode/joytocode.github.io.git -d dist --dotfiles -m \"Updated by $(git rev-parse HEAD | cut -c 1-8)\""
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "babel-preset-env",
+        {
+          "targets": {
+            "node": "8"
+          },
+          "shippedProposals": true
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
+    "nuxt": "^1.4.0",
+    "vuetify": "^1.0.18"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.0.1",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.1.6",
+    "dotenv": "^6.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.5.0",
+    "gh-pages": "^1.2.0",
+    "jest": "^23.1.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
+  }
+}
