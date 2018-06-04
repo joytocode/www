@@ -35,7 +35,7 @@
                 title="GitHub"
                 icon
               >
-                <v-icon>fab fa-github</v-icon>
+                <v-icon color="grey darken-2">fab fa-github</v-icon>
               </v-btn>
               <v-btn
                 href="https://plainlogo.joytocode.com"
@@ -43,7 +43,7 @@
                 title="PlainLogo"
                 icon
               >
-                <v-icon>fas fa-external-link-square-alt</v-icon>
+                <v-icon color="grey darken-2">fas fa-external-link-square-alt</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -72,7 +72,7 @@
                 title="GitHub"
                 icon
               >
-                <v-icon>fab fa-github</v-icon>
+                <v-icon color="grey darken-2">fab fa-github</v-icon>
               </v-btn>
               <v-btn
                 href="https://www.npmjs.com/package/lighthouse-lambda"
@@ -80,7 +80,7 @@
                 title="NPM"
                 icon
               >
-                <v-icon>fab fa-npm</v-icon>
+                <v-icon color="grey darken-2">fab fa-npm</v-icon>
               </v-btn>
             </v-card-actions>
           </v-card>
@@ -93,36 +93,24 @@
         href="https://github.com/joytocode"
         target="_blank"
         title="GitHub"
-        large
         icon
       >
-        <v-icon
-          color="primary"
-          large
-        >fab fa-github</v-icon>
+        <v-icon>fab fa-github</v-icon>
       </v-btn>
       <v-btn
         href="https://twitter.com/joytocode"
         target="_blank"
         title="Twitter"
-        large
         icon
       >
-        <v-icon
-          color="primary"
-          large
-        >fab fa-twitter</v-icon>
+        <v-icon>fab fa-twitter</v-icon>
       </v-btn>
       <v-btn
         href="mailto:team@joytocode.com"
         title="Email"
-        large
         icon
       >
-        <v-icon
-          color="primary"
-          large
-        >fas fa-envelope</v-icon>
+        <v-icon>fas fa-envelope</v-icon>
       </v-btn>
     </div>
   </v-container>
@@ -145,7 +133,7 @@ export default {
 
 <style lang="stylus" scoped>
 .logo
-  max-width: 80%
+  max-width: 70%
   display: block
   margin: 0 auto
 </style>
