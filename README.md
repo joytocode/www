@@ -1,5 +1,5 @@
-# joytocode/joytocode-home
+# joytocode/www
 
-The source of [https://joytocode.com](https://joytocode.com).
+The source of [https://www.joytocode.com](https://www.joytocode.com).
 
-[![Build Status](https://travis-ci.org/joytocode/joytocode-home.svg?branch=master)](https://travis-ci.org/joytocode/joytocode-home)
+[![Build Status](https://travis-ci.org/joytocode/www.svg?branch=master)](https://travis-ci.org/joytocode/www)

@@ -20,7 +20,7 @@
               <div>
                 <div class="headline">
                   <a
-                    href="https://joytocode.com/plainlogo"
+                    href="https://plainlogo.joytocode.com"
                     target="_blank"
                   >PlainLogo</a>
                 </div>
@@ -38,7 +38,7 @@
                 <v-icon>fab fa-github</v-icon>
               </v-btn>
               <v-btn
-                href="https://joytocode.com/plainlogo"
+                href="https://plainlogo.joytocode.com"
                 target="_blank"
                 title="PlainLogo"
                 icon
