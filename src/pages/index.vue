@@ -61,7 +61,7 @@
                     target="_blank"
                   >lighthouse-lambda</a>
                 </div>
-                <span class="grey--text text--darken-3">&#x1F6A7; Run Google Chrome Lighthouse on AWS Lambda.</span>
+                <span class="grey--text text--darken-3">&#x1F197; Run Google Chrome Lighthouse on AWS Lambda.</span>
               </div>
             </v-card-title>
             <v-card-actions>
