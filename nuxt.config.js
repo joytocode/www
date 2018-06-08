@@ -7,6 +7,10 @@ exports.rootDir = __dirname
 
 exports.srcDir = path.join(__dirname, 'src')
 
+exports.env = {
+  HEAP_ANALYTICS_KEY: process.env.HEAP_ANALYTICS_KEY
+}
+
 exports.loading = {
   color: '#08888F',
   height: '3px'
@@ -38,7 +42,8 @@ exports.css = [
 ]
 
 exports.plugins = [
-  path.join(__dirname, 'src/plugins/vuetify')
+  path.join(__dirname, 'src/plugins/vuetify'),
+  { src: path.join(__dirname, 'src/plugins/heap-analytics'), ssr: false }
 ]
 
 exports.serverMiddleware = [
